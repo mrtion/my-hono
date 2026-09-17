@@ -21,6 +21,7 @@ app.get("/users", async (c) => {
 app.post("/add", async (c) => {
   const body = await c.req.json()
   const { username, email, password } = body
+  
   try {
     const res = await c.env.DB.prepare('INSERT INTO users (username, email, password) VALUES (?, ?, ?)')
       .bind(username, email, password)
