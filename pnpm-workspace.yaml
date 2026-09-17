@@ -1,9 +1,0 @@
-packages:
-  - "."
-allowBuilds:
-  better-sqlite3: false
-  esbuild: true
-  workerd: true
-minimumReleaseAgeExclude:
-  - miniflare@5.20260916.0-alpha
-  - wrangler@4.133.0
