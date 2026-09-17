@@ -18,5 +18,6 @@
     "drizzle-kit": "^0.31.10",
     "nitro-cloudflare-dev": "^0.2.2",
     "wrangler": "^4.133.0"
-  }
+  },
+  "packageManager": "pnpm@10.11.1"
 }
