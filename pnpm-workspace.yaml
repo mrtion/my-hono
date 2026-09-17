@@ -2,5 +2,9 @@ onlyBuiltDependencies:
   - esbuild
   - workerd
 allowBuilds:
+  better-sqlite3: set this to true or false
   esbuild: true
   workerd: true
+minimumReleaseAgeExclude:
+  - miniflare@5.20260916.0-alpha
+  - wrangler@4.133.0

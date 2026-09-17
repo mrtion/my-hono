@@ -4,13 +4,19 @@
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy --minify",
-    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings",
+    "db:generate": "drizzle-kit generate"
   },
   "dependencies": {
+    "drizzle-orm": "^0.45.2",
     "hono": "^4.13.8"
   },
   "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
     "@types/node": "^22.20.3",
+    "better-sqlite3": "^13.0.3",
+    "drizzle-kit": "^0.31.10",
+    "nitro-cloudflare-dev": "^0.2.2",
     "wrangler": "^4.133.0"
   }
 }
